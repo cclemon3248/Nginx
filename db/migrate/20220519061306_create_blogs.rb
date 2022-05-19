@@ -1,7 +1,7 @@
 class CreateBlogs < ActiveRecord::Migration[6.0]
   def change
     create_table :blogs do |t|
-      t.strong :title
+      t.string :title
       t.text :content
 
       t.timestamps
